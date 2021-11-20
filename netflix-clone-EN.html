@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="netflix-clone-EN.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap" rel="stylesheet">
+		<title>Netflix - Watch TV Shows,Movies Online</title>
+	</head>
+
+	<body>
+		<div>
+			<img class="bg-wallpaper" src="got-wp.jpg">
+			<img class="logo" src="netflix-logo.png">
+
+			<div class="navbar">
+				<li class="navbar-item1"><a href="#">Home</a><li>
+				<li class="navbar-item2"><a href="#">TV Shows</a>
+					<ul class="navbar-item2-sub-menu">
+						<li><a href="#">Vikings</a></li>
+						<li><a href="#">Spartacus</a></li>
+						<li><a href="#">La Casa de Papel</a></li>
+						<li><a href="#">The Office</a></li>
+						<li><a href="#">Squid Game</a></li>
+						<li><a href="#">Mindhunter</a></li>
+					</ul>
+				<li>
+				<li class="navbar-item3"><a href="#">Movies</a><li>
+				<li class="navbar-item4"><a href="#">Latest</a><li>
+				<li class="navbar-item5"><a href="#">My List</a><li>
+
+				<input type="text" class="search-bar" placeholder="Search"></input>
+			</div>
+
+			<a href="netflix-clone-EN.html" class="languages">EN</a>
+			<a href="netflix-clone-AZ.html" class="languages" id="az">AZ</a>
+	
+			<button class="winter-text">WINTER IS COMING</button>
+			
+			<h1 class="game-of-thrones-text"> GAME <span class="f-letter">F</span><br> <span class="thr-text">THR </span>&nbsp;&nbsp;NES</h1>
+			
+			<img src="o-letter.png" class="o-letter1">
+			<img src="o-letter.png" class="o-letter">
+			
+			<select class="seasons">
+				<option value="0">Season 1</option>
+				<option value="1">Season 2</option>
+				<option value="2">Season 3</option>
+				<option value="3">Season 4</option>
+				<option value="4">Season 5</option>
+				<option value="5">Season 6</option>
+				<option value="6">Season 7</option>
+				<option value="7">Season 8</option>
+			</select>
+
+			<button class="my-list">MY LIST</button>
+			<button class="trailer-button">WATCH TRAILER</button>
+
+			<div id="video" style="display:none;">
+				<iframe src="https://www.youtube.com/embed/KPLWWIOCOOQ" allowfullscreen frameborder="0"></iframe>
+			</div>
+		
+		</div>
+	
+		<script>
+
+			// HTML DOM ilə elementin seçilməsi 
+
+			var trailer = document.querySelector(".trailer-button");
+
+			// Treyler 
+
+			trailer.onclick = function () {
+ 		 		if (video.style.display !== "none") {
+    				video.style.display = "none";
+  				} else {
+    				video.style.display = "block";
+  					}
+				};
+		</script>
+	</body>
+</html>
+
+
+
+

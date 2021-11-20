@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="netflix-clone-AZ.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&display=swap" rel="stylesheet">
+		<title>Netflix - Onlayn Serial və Kinolar</title>
+	</head>
+
+	<body>
+		<div>
+			<img class="bg-wallpaper" src="got-wp.jpg">
+			<img class="logo" src="netflix-logo.png">
+
+			<div class="navbar">
+				<li class="navbar-item1"><a href="#">Ana səhifə</a><li>
+				<li class="navbar-item2"><a href="#">TV Şoular</a>
+					<ul class="navbar-item2-sub-menu">
+						<li><a href="#">Vikings</a></li>
+						<li><a href="#">Spartacus</a></li>
+						<li><a href="#">La Casa de Papel</a></li>
+						<li><a href="#">The Office</a></li>
+						<li><a href="#">Squid Game</a></li>
+						<li><a href="#">Mindhunter</a></li>
+					</ul>
+				<li>
+				<li class="navbar-item3"><a href="#">Kinolar</a><li>
+				<li class="navbar-item4"><a href="#">Ən Son</a><li>
+				<li class="navbar-item5"><a href="#">Mənim Listim</a><li>
+
+				<input type="text" class="search-bar" placeholder="Search"></input>
+			</div>
+
+			<a href="netflix-clone-EN.html" class="languages">EN</a>
+			<a href="netflix-clone-AZ.html" class="languages" id="az">AZ</a>
+	
+			<button class="winter-text">WINTER IS COMING</button>
+			
+			<h1 class="game-of-thrones-text"> GAME <span class="f-letter">F</span><br> <span class="thr-text">THR </span>&nbsp;&nbsp;NES</h1>
+			
+			<img src="o-letter.png" class="o-letter1">
+			<img src="o-letter.png" class="o-letter">
+			
+			<select class="seasons">
+				<option value="0">Sezon 1</option>
+				<option value="1">Sezon 2</option>
+				<option value="2">Sezon 3</option>
+				<option value="3">Sezon 4</option>
+				<option value="4">Sezon 5</option>
+				<option value="5">Sezon 6</option>
+				<option value="6">Sezon 7</option>
+				<option value="7">Sezon 8</option>
+			</select>
+
+			<button class="my-list">MƏNİM LİSTİM</button>
+			<button class="trailer-button">TREYLERİ İZLƏ</button>
+
+			<div id="video" style="display:none;">
+				<iframe src="https://www.youtube.com/embed/KPLWWIOCOOQ" allowfullscreen frameborder="0"></iframe>
+			</div>
+			
+		</div>
+	
+		<script>
+
+			// HTML DOM ilə elementin seçilməsi 
+
+			var trailer = document.querySelector(".trailer-button");
+
+			// Treyler 
+
+			trailer.onclick = function () {
+ 		 		if (video.style.display !== "none") {
+    				video.style.display = "none";
+  				} else {
+    				video.style.display = "block";
+  					}
+				};
+		</script>
+	</body>
+</html>
+
+
+
+
